@@ -37,3 +37,9 @@ print(v2*3)
 # Vector(6, 9)
 print(v2**3)
 # Vector(8, 27)
+# # 1.2.2
+# # 如果把 def __repr__(self):方法注销掉，控制台则输出表达式的内存地址
+# # <__main__.Vector object at 0x00000000021E5A90>
+# #　4.47213595499958
+# # <__main__.Vector object at 0x00000000021E5A90>
+# # <__main__.Vector object at 0x00000000021E5A90>
