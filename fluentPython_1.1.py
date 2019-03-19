@@ -1,6 +1,6 @@
 import collections
 Card = collections.namedtuple('Card', ['rank', 'suit'])
-# 定义花色权重，便于区分大小
+
 
 class FrenchDeck:
     ranks = [str(n) for n in range(2, 11)]+list('JQKA')
@@ -49,6 +49,7 @@ print(deck[12::13])
 print(Card('I', 'spades') in deck)
 # # False
 
+# 定义花色权重，把纸牌除了数字之外，加上花色重排大小
 suit_values = dict(spades=3, hearts=2, diamonds=0, clubs=1)
 def spades_high(card):
     rank_value = FrenchDeck.ranks.index(card.rank)
